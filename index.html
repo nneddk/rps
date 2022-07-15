@@ -3,15 +3,20 @@
     <head>
         <meta charset = 'UTF-8'>
         <link rel = 'stylesheet' href = 'index.css'>
+        <link rel = 'stylesheet' href = 'main.css'>
+        <script src = 'main.js' defer></script>
+        <script src = 'index.js' defer></script>
         <title>rps</title>
     </head>
     <body>
         <div id = 'main-page'>
 
             <div id = 'new-game'>
-                <span id = 'result'>you win</span>
-                <span id = 'goal'>first to <input type = 'text' id = 'goal-score' value = '5' min= '1' max = '10'></span>
-                <button id = 'play-again-button' type = 'button'>play</button>
+                <div id = 'new-game-container'>
+                    <span id = 'result'>you win</span>
+                    <span id = 'goal'>first to <input type = 'text' id = 'goal-score' value = '5' min= '1' max = '10'></span>
+                    <button id = 'play-again-button' type = 'button'>play</button>
+                </div>
             </div>
 
             <div id = 'game-board'>
