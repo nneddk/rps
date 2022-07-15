@@ -1,11 +1,8 @@
 body{
-    background-image: linear-gradient(purple,yellow);
-
+    background-image: linear-gradient(black,purple);
     margin: 0px;
 }
-*{
-    border: solid;
-}
+
 #main-page{
     display:flex;
     justify-content: center;
@@ -43,10 +40,11 @@ body{
 #result{
     color:whitesmoke;
     text-align: center;
-    height: 10vh;
-    width: 70%;
+    height: 0;
+    width: 80%;
     font-size: 8vmin;
     overflow:hidden;
+    transition: all 0.5s ease-in-out;
 }
 #goal{
     color:whitesmoke;
@@ -71,9 +69,9 @@ body{
     background-color: rgb(0,0,0,0.2);
     border:none;
     height: 80px;
-    width: 120px;
+    width: 180px;
     border-radius: 9999px;
-    font-size: 4vmin;
+    font-size: 3vmin;
     transition: all 0.5s ease-in-out;
 }
 #play-again-button:hover{
@@ -90,6 +88,7 @@ body{
     gap: 12px;
 }
 #score-board{
+    color:whitesmoke;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -100,13 +99,19 @@ body{
     text-align: center;
     font-size: 6vmin;
 }
+#match-result{
+    width: 20%;
+    font-size: 4vmin;
+    text-align: center;
+}
 
 #player-vs-computer{
     height: 40vh;
     width: 100%;
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
+    gap:12px;
 }
 .choice-picture{
     display: flex;
@@ -115,8 +120,9 @@ body{
     height: 280px;
     width: 280px;
     border-radius: 50%;
-    transition: all 1.5s ease-in-out;
 }
+
+
 #player-picture:hover{
     transform: rotate(90deg);
 }
@@ -128,15 +134,36 @@ body{
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+    gap:12px;
     width: 100%;
     height: 10vh;
 }
 
 .player-choice-button{
+    border:none;
     height:200px;
     width:200px;
     border-radius: 50%;
     transition: all 0.5s ease-out;
+    background-color: transparent;
+}
+#rock{
+    background: url(./images/rk.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 75%;
+}
+#paper{
+    background: url(./images/pp.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 75%;
+}
+#scissors{
+    background: url(./images/sc.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 65%;
 }
 
 .player-choice-button:hover{
