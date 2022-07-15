@@ -1,0 +1,23 @@
+body{
+    background-image: linear-gradient(orange,purple);
+}
+*{
+    border:solid;
+}
+#main-page{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    padding-bottom: 20vh;
+}
+
+#new-game{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+    width: 50vw;
+    flex: 0 1 auto;
+}
