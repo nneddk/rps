@@ -1,23 +1,71 @@
 body{
-    background-image: linear-gradient(orange,purple);
+    background-image: linear-gradient(blue,Yellow);
+
+    margin: 0px;
 }
 *{
-    border:solid;
+    border: solid;
 }
 #main-page{
     display:flex;
     justify-content: center;
     align-items: center;
     height: 80vh;
-    padding-bottom: 20vh;
+    padding-bottom: 20vh;   
 }
-
 #new-game{
-    display:flex;
+    display:none;
+    position: absolute;
+    z-index: 1;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    gap:18px;
     height: 50vh;
     width: 50vw;
     flex: 0 1 auto;
+    border-radius: 10px;
+    background-color: rgb(0,0,0,0.2);
+    transition: all 1.5s;
+}
+
+#result{
+    color:whitesmoke;
+    text-align: center;
+    height: 18;
+    width: 70%;
+    font-size: 8vmin;
+    overflow:hidden;
+}
+
+#goal{
+    color:whitesmoke;
+    text-align: center;
+    font-size: 8vmin;
+    height:18%;
+    width:70%;
+}
+#goal-score{
+    border:none;
+    color:whitesmoke;
+    background-color: rgb(0,0,0,0.2);
+    text-align: center;
+    border-radius: 25px;
+    width: 4vw;
+    height:7vh;
+    font-size: 7vmin;
+}
+
+#play-again-button{
+    color:whitesmoke;
+    background-color: rgb(0,0,0,0.2);
+    border:none;
+    height: 20%;
+    width: 20%;
+    border-radius: 9999px;
+    font-size: 5vmin;
+    transition: all 0.5s ease-in-out;
+}
+#play-again-button:hover{
+    transform: scale(1.1);
 }
