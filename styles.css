@@ -2,7 +2,17 @@ body{
     background-image: linear-gradient(Orange,purple);
     margin: 0px;
 }
-
+#page-name{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    height: 8vh;  
+    color:whitesmoke;
+    font-size: 7vmin;
+    -webkit-user-select: none; /* Safari */
+    -ms-user-select: none; /* IE 10 and IE 11 */
+    user-select: none; /* Standard syntax */  
+}
 #main-page{
     display:flex;
     justify-content: center;
@@ -165,7 +175,13 @@ body{
     background-position: center;
     background-size: 65%;
 }
-
 .player-choice-button:hover{
     transform: rotate(90deg);
+}
+#footer{
+    background-color: black;
+}
+#footer a{
+    color: whitesmoke;
+   text-decoration: none;
 }
