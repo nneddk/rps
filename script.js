@@ -20,13 +20,24 @@ playButton.onclick = function(){
     newGameScreen.style.height = '0';
     newGameScreen.style.paddingBottom = '0';
     scoreGoal = document.getElementById('goal-score').value;
-    console.log(scoreGoal);
     playerScore.textContent = 0;
     opponentScore.textContent= 0;
-    matchResult.textContent = '';
+    matchResult.textContent = '';;
+    playerPicture.style.background = 'url(./images/rk.png)';
+    playerPicture.style.backgroundSize =  '75%';
+    playerPicture.style.backgroundRepeat =  'no-repeat';
+    playerPicture.style.backgroundPosition = 'center';
+    playerPicture.style.transform = 'rotate(90deg)';
+    playerPicture.style.transition = 'all 0.5s ease-in-out';
+
+    opponentPicture.style.background = 'url(./images/op_rk.png';
+    opponentPicture.style.backgroundSize =  '75%';
+    opponentPicture.style.backgroundRepeat =  'no-repeat';
+    opponentPicture.style.backgroundPosition = 'center';
+    opponentPicture.style.transform = 'rotate(-90deg)';
+    opponentPicture.style.transition = 'all 0.5s ease-in-out';
 
 }
-
 
 
 let enabled = 1;
@@ -117,7 +128,7 @@ function opponentPic(pic){
                 opponentPicture.style.backgroundSize =  '60%';
                 break;
         }
-        opponentPicture.style.transition = 'all 0.5s ease-in-out';
+        
         opponentPicture.style.transform = 'rotate(-90deg)';
         opponentPicture.style.backgroundRepeat =  'no-repeat';
         opponentPicture.style.backgroundPosition = 'center';  
